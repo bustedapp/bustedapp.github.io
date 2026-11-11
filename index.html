@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BUSTED · The Party Game</title>
+<meta name="description" content="Het partyspel voor een hele avond. Gratis in de App Store.">
+<meta name="apple-itunes-app" content="app-id=6801260522">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="BUSTED · The Party Game">
+<meta property="og:description" content="Wie gaat er vanavond aan? Gratis in de App Store.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="icoon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --gold: #e4a93c;
+    --gold-lite: #f3c866;
+    --whiskey: #b7842a;
+    --wit: #f4efe6;
+    --grijs: #a59d90;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { background: var(--ink); }
+  body {
+    min-height: 100svh;
+    background:
+      radial-gradient(ellipse 80% 45% at 50% 0%, rgba(228,169,60,.22), transparent 70%),
+      var(--ink);
+    color: var(--wit);
+    font-family: "Barlow Condensed", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    padding: env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom) + 28px);
+  }
+  main { max-width: 480px; margin: 0 auto; text-align: center; }
+
+  .logo { display: block; width: min(78vw, 360px); height: auto; margin: 44px auto 6px; }
+  .kop {
+    font-family: "Archivo Black", sans-serif;
+    font-style: oblique 7deg;
+    text-transform: uppercase;
+    font-size: clamp(30px, 9vw, 40px);
+    line-height: 1.02;
+    padding: 0 16px;
+  }
+  .kop em { font-style: inherit; color: var(--gold); }
+  .onder { font-size: 20px; font-weight: 500; color: var(--grijs); margin: 12px 16px 0; }
+
+  .knop {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    width: calc(100% - 32px); max-width: 400px; min-height: 64px;
+    margin: 26px auto 0; padding: 0 22px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 19px; text-transform: uppercase; letter-spacing: .01em;
+    color: var(--ink); text-decoration: none;
+    background: linear-gradient(180deg, var(--gold-lite), var(--gold) 55%, var(--whiskey));
+    border-radius: 16px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.18) inset, 0 10px 34px rgba(228,169,60,.35);
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .12s ease;
+  }
+  .knop:active { transform: scale(.97); }
+  .knop svg { width: 24px; height: 24px; flex: none; }
+  .gratis { font-size: 17px; font-weight: 500; color: var(--grijs); margin-top: 10px; }
+
+  .tiktok {
+    display: none;
+    margin: 18px 16px 0; padding: 14px 16px;
+    border: 1px solid rgba(228,169,60,.45); border-radius: 14px;
+    font-size: 19px; font-weight: 500; line-height: 1.3; color: var(--wit);
+    background: rgba(228,169,60,.08);
+  }
+  .tiktok b { color: var(--gold-lite); font-weight: 700; }
+  .in-app .tiktok { display: block; }
+
+  .rij {
+    display: flex; gap: 12px;
+    margin-top: 34px; padding: 0 16px 6px;
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .rij::-webkit-scrollbar { display: none; }
+  .rij img {
+    flex: none; width: 62%; max-width: 280px; height: auto; aspect-ratio: 600 / 1300;
+    border-radius: 18px; scroll-snap-align: center;
+    box-shadow: 0 0 0 1px rgba(228,169,60,.25);
+    background: #141414;
+  }
+  .veeg { font-size: 16px; font-weight: 500; color: var(--grijs); margin-top: 10px; }
+
+  .slot { margin-top: 30px; }
+  .slot .kop { font-size: clamp(26px, 7.6vw, 34px); }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="BUSTED · The Party Game" width="900" height="616">
+
+  <h1 class="kop" data-nl="Wie gaat er <em>vanavond</em> aan?" data-en="Who's going <em>down</em> tonight?">Wie gaat er <em>vanavond</em> aan?</h1>
+  <p class="onder" data-nl="Het partyspel voor een hele avond. Duels, specials en Rondje Stad, op één telefoon of op allemaal." data-en="The party game for a whole night. Duels, specials and Round the Block, on one phone or on all.">Het partyspel voor een hele avond. Duels, specials en Rondje Stad, op één telefoon of op allemaal.</p>
+
+  <a class="knop" id="knop" href="https://apps.apple.com/nl/app/busted-the-partygame/id6801260522">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a1.6 1.6 0 0 1 1.6 1.6v8.5l2.7-2.7a1.6 1.6 0 1 1 2.3 2.3l-5.4 5.4a1.6 1.6 0 0 1-2.3 0L5.5 12.7a1.6 1.6 0 1 1 2.3-2.3l2.6 2.7V4.6A1.6 1.6 0 0 1 12 3Z"/><rect x="4" y="19.4" width="16" height="2.6" rx="1.3" fill="currentColor"/></svg>
+    <span data-nl="Download de app" data-en="Download the app">Download de app</span>
+  </a>
+  <p class="gratis" data-nl="Gratis in de App Store · iPhone" data-en="Free on the App Store · iPhone">Gratis in de App Store · iPhone</p>
+
+  <p class="tiktok" data-nl="Opent de App Store niet? Tik rechtsboven op <b>•••</b> en kies <b>Openen in browser</b>." data-en="App Store not opening? Tap <b>•••</b> in the top right and choose <b>Open in browser</b>.">Opent de App Store niet? Tik rechtsboven op <b>•••</b> en kies <b>Openen in browser</b>.</p>
+
+  <div class="rij" id="rij"></div>
+  <p class="veeg" data-nl="Veeg voor meer" data-en="Swipe for more">Veeg voor meer</p>
+
+  <div class="slot">
+    <p class="kop" data-nl="Kom maar <em>op.</em>" data-en="Bring it <em>on.</em>">Kom maar <em>op.</em></p>
+    <a class="knop" id="knop2" href="https://apps.apple.com/nl/app/busted-the-partygame/id6801260522">
+      <span data-nl="Download BUSTED" data-en="Get BUSTED">Download BUSTED</span>
+    </a>
+  </div>
+</main>
+<script>
+  (function () {
+    var ID = "6801260522";
+    var ua = navigator.userAgent || "";
+    var taal = /^nl\b/i.test(navigator.language || "nl") ? "nl" : "en";
+    var web = taal === "nl"
+      ? "https://apps.apple.com/nl/app/busted-the-partygame/id" + ID
+      : "https://apps.apple.com/app/busted-the-partygame/id" + ID;
+
+    document.documentElement.lang = taal;
+    if (taal === "en") {
+      document.querySelectorAll("[data-en]").forEach(function (el) { el.innerHTML = el.getAttribute("data-en"); });
+    }
+
+    var rij = document.getElementById("rij");
+    for (var i = 1; i <= 8; i++) {
+      var img = document.createElement("img");
+      img.src = taal + "/0" + i + ".jpg";
+      img.alt = "";
+      img.loading = i > 2 ? "lazy" : "eager";
+      img.width = 600; img.height = 1300;
+      rij.appendChild(img);
+    }
+
+    // TikTok en Instagram openen links in hun eigen browser. Daar is een automatische sprong naar de
+    // App Store geblokt; een tik van de bezoeker zelf mag wel. Lukt ook dat niet, dan staat de uitleg eronder.
+    var inApp = /musical_ly|BytedanceWebview|TikTok|Instagram|FBAN|FBAV/i.test(ua);
+    if (inApp) document.body.classList.add("in-app");
+
+    ["knop", "knop2"].forEach(function (id) {
+      var a = document.getElementById(id);
+      a.href = web;
+      if (!inApp || !/iPhone|iPad|iPod/.test(ua)) return;
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var weg = false;
+        document.addEventListener("visibilitychange", function () { if (document.hidden) weg = true; }, { once: true });
+        window.location.href = "itms-apps://apps.apple.com/app/id" + ID;
+        setTimeout(function () { if (!weg) window.location.href = web; }, 900);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
